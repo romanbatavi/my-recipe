@@ -39,6 +39,7 @@ const App = () => {
         value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">Search</button>
       </form>
+      <div className="recipes">
       {recipes.map(recipe => (
         <Recipe 
         key={recipe.recipe.label}
@@ -49,6 +50,7 @@ const App = () => {
         />
       ))}
     </div>
+  </div>
   );
 };
 
